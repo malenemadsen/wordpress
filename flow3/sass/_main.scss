@@ -1,0 +1,222 @@
+
+.site {
+    padding: $spacer;
+    font-family: lato, sans-serif;
+}
+.site-header {
+    
+    // logo
+    .site-title {
+        font-size: 16px;
+        margin: 0;
+        display: inline;
+        a {
+            color: $font-color;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    }
+    .custom-logo-link{
+        width:200px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .main-navigation {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        margin-top: -35px;
+        padding-right: 15px;
+        // links i menu
+        a {
+            color: lighten($font-color, 25%);
+            font-weight: 600;
+        }
+        // hamburger-knappen
+        .menu-toggle {
+            padding: 0;
+            border: none;
+            background-color: white;
+        }
+        .menu {
+            align-self: flex-start;
+            .nav-menu {
+                margin-top: 50px;
+                a{
+                   margin-top:10px;
+                   font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+.textwidget{
+    text-align:center;
+    font-size: $font-size;
+    margin:1px;
+    padding-bottom: 25px;
+    h1{
+    padding-top:55px;
+    line-height: 35px;
+    padding-bottom: 25px;
+    }
+    p{
+        line-height: 27px;
+        font-size: 18px;
+        a{
+            color:$link;
+            font-weight: bolder;
+        }
+        }
+}
+.widget-title{
+    line-height: 35px;
+    text-align:center;
+    font-size: 29px;
+    font-weight: 800px;
+    }
+.widget_media_image{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 0px 40px;
+  margin-bottom: 5px;
+}
+.custom-html-widget{
+    padding: 0px 10px
+}
+#media_gallery-4{
+    padding: 0px 20px;
+    margin: 0px 10px;
+}
+
+input{
+    width: 100%;
+    height: 45px;
+}
+input[type=submit]{
+    background-color:$link;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+ul{
+    list-style-type: none;
+    li{
+        text-decoration: none;
+        text-align: left;
+        font-size: 15px;
+        a{
+            color:$link;
+        }
+    }
+    
+}
+#custom_html-14{
+    display: flex;
+    text-align: left;
+    margin-left:-90px;
+    margin-bottom: 0px;
+
+  }
+//page
+.entry-header {
+    margin-top:70px;
+    font-size: $font-size;
+    line-height: 35px;
+}
+
+.entry-content {
+    display: flex;
+    flex-direction: column;
+    
+    .description-text{
+        line-height: 29px;
+        font-size: 22px;
+        margin-top:0px;
+        margin-bottom: 15px;
+    }
+    img{
+        margin-top:0px;
+        border-radius: 5px;
+    }
+
+    p{
+        margin-left:0px;
+        padding-left:0px;
+        font-size: 18px;
+        line-height: 25px;
+        a{
+            color:$link;
+            font-weight: 600px;
+        }
+    }
+
+    hr{
+        background-color: #000000;
+    }
+
+    .wp-image-85{
+        border-radius: 50px;
+        width: 30px;
+        margin-right: 0px;
+    }
+    .has-large-font-size{
+        font-size: 15px;
+        margin: 0px;
+        color:rgb(146, 146, 146); ;
+        a{
+            color: rgb(146, 146, 146);
+            font-weight: 900px;
+            text-decoration: none;
+        }
+    }
+
+    .wp-block-media-text__content{
+        padding-left: 0px;
+        margin: 0px;
+    }
+    
+}
+@media screen and (min-width: 600px) {
+    .site-header {
+        flex-direction: row;
+        .main-navigation {
+            display: flex;
+            justify-content: flex-end;
+            .menu-menu-1-container {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                .menu-item {
+                    margin-left: $spacer;
+                }
+            }
+        }
+    }
+    .site-main{
+        width: 800px;
+        margin: auto;
+    }
+    .entry-header {
+        font-size: 32px;
+        line-height: 60px;
+    }
+
+    .description-text{
+        line-height: 29px;
+        font-size: 35px; //kan ikke få lov til en ændre text størgelsen af og ved ikke hvorfor (Prøvede at ændre baggrundsfaven for at se om der var hul igennem og det virkded) så ved ikke lige hvordan jeg skal løse det.
+    }
+
+}
+    
+@media screen and (min-width: 1200px) {
+    .site {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
